@@ -1,0 +1,66 @@
+.reg-main {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 24px 80px;
+  max-width: 560px;
+}
+
+.reg-card { width: 100%; }
+.reg-not-found, .reg-closed, .reg-success {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 48px 32px;
+}
+
+.reg-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.reg-icon { color: var(--clr-orange); flex-shrink: 0; }
+
+.reg-tournament-name {
+  color: var(--clr-text-muted);
+  font-size: 0.9rem;
+}
+
+.reg-team-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--clr-text-muted);
+  margin-bottom: 24px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reg-players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Success */
+.success-icon { color: #55cc88; margin-bottom: 8px; }
+
+.reg-players-summary {
+  color: var(--clr-text-muted);
+  font-size: 0.95rem;
+}
+
+.clan-highlight {
+  color: var(--clr-orange);
+  font-weight: 700;
+}
